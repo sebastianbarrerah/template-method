@@ -26,9 +26,8 @@ public abstract class Cream {
     protected abstract void fruitEssence();
 
     private void freeze(){
-        System.out.println("Cocinar bajo fuego bajo y revolver contantmente hasta que espese y tenga una textura suave. Llevar recipiente al congelador y dejar por dos horas");
+        System.out.println("Cocinar bajo fuego bajo y revolver constantmente hasta que espese y tenga una textura suave. Llevar recipiente al congelador y dejar por dos horas");
     }
 
     protected abstract void finish();
-
 }
