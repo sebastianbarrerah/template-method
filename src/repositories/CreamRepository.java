@@ -1,5 +1,7 @@
 package repositories;
 
+import models.Chocolate;
+import models.Coco;
 import models.Vanilla;
 
 public class CreamRepository {
@@ -13,8 +15,16 @@ public class CreamRepository {
         return instance;
     }
 
-    public Vanilla CreamVainilla(){
+    public Vanilla CreamVanilla(){
         return new Vanilla();
+    }
+
+    public Coco CreamCoco(){
+        return new Coco();
+    }
+
+    public Chocolate CreamChocolate(){
+        return new Chocolate();
     }
 
 }

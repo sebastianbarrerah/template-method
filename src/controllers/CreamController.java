@@ -6,20 +6,24 @@ import utils.ConsoleUtils;
 public class CreamController {
 
     private final CreamService creamService;
-    private final ConsoleUtils console;
 
-    public CreamController(CreamService creamService, ConsoleUtils console){
+    public CreamController(CreamService creamService){
         this.creamService = creamService;
-        this.console = console;
     }
 
-    public void executeController (){
-        try {
-            creamService.showCreams();
-            System.out.println("Que la disfrutes");
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
+    public void executeVanilla(){
+        System.out.println("----------------------%n Comparte la receta con tus amigos%n----------------------");
     }
+
+    public String executeCoco(){
+
+        return creamService.creamCoco().toString();
+    }
+
+    public void executeChocolate(){
+        creamService.creamChocolate();
+        System.out.println("----------------------%n Comparte la receta con tus amigos%n----------------------");
+    }
+
 
 }

@@ -1,20 +1,29 @@
 package services;
 
+import models.Chocolate;
+import models.Coco;
+import models.Vanilla;
 import repositories.CreamRepository;
-import utils.ConsoleUtils;
 
 public class CreamService {
 
     private final CreamRepository repository;
-    private final ConsoleUtils console;
 
 
-    public CreamService(CreamRepository repository, ConsoleUtils console) {
+    public CreamService(CreamRepository repository) {
         this.repository = repository;
-        this.console = console;
     }
 
-    public void showCreams(){
-        System.out.println("Ricas cremas");
+    public Vanilla creamVanilla(){
+        return repository.CreamVanilla();
+    }
+
+
+    public Coco creamCoco(){
+        return repository.CreamCoco();
+    }
+
+    public Chocolate creamChocolate(){
+        return repository.CreamChocolate();
     }
 }
