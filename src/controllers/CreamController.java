@@ -1,7 +1,6 @@
 package controllers;
 
 import services.CreamService;
-import utils.ConsoleUtils;
 
 public class CreamController {
 

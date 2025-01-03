@@ -10,11 +10,11 @@ public class ConsoleUtils {
             try {
                 System.out.println(message);
                 int value = scanner.nextInt();
-                scanner.nextLine(); // Consumir el salto de línea
+                scanner.nextLine();
                 return value;
             } catch (Exception e) {
                 System.out.println("Ingresa un número con formato válido.");
-                scanner.nextLine(); // Consumir el salto de línea
+                scanner.nextLine();
             }
         }
     }
