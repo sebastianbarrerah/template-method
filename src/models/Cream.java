@@ -18,7 +18,7 @@ public abstract class Cream {
     }
 
     private void pourEggs() {
-        System.out.println("Revolver por dos minutos y echar 4 yemas de huevo");
+        System.out.println("- Revolver por dos minutos y echar 4 yemas de huevo");
     }
 
     protected abstract void essence();
@@ -26,7 +26,7 @@ public abstract class Cream {
     protected abstract void fruitEssence();
 
     private void freeze(){
-        System.out.println("Cocinar bajo fuego bajo y revolver constantmente hasta que espese y tenga una textura suave. Llevar recipiente al congelador y dejar por dos horas");
+        System.out.println("- Cocinar en fuego bajo y revolver constantmente hasta que espese y tenga una textura suave. ");
     }
 
     protected abstract void finish();

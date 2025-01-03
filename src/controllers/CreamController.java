@@ -11,19 +11,21 @@ public class CreamController {
         this.creamService = creamService;
     }
 
-    public void executeVanilla(){
-        System.out.println("----------------------%n Comparte la receta con tus amigos%n----------------------");
+    public void executeVanilla() {
+        creamService.creamVanilla().preparation();
+        System.out.println("----------------------\nComparte la receta con tus amigos\n----------------------");
     }
 
-    public String executeCoco(){
-
-        return creamService.creamCoco().toString();
+    public void executeCoco() {
+        creamService.creamCoco().preparation();
+        System.out.println("----------------------\nComparte la receta con tus amigos\n----------------------");
     }
 
-    public void executeChocolate(){
-        creamService.creamChocolate();
-        System.out.println("----------------------%n Comparte la receta con tus amigos%n----------------------");
+    public void executeChocolate() {
+        creamService.creamChocolate().preparation();
+        System.out.println("----------------------\nComparte la receta con tus amigos\n----------------------");
     }
+
 
 
 }
